@@ -1,0 +1,27 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #5A6B5D;
+}
+.item h3 {
+    font-size: 24px;
+}
+.item p {
+    font-size: 20px;
+}
+.item h4 {
+    font-size: 18px;
+}
+.right {
+    display: flex;
+    align-items: center;
+}
+.salaryItem{
+    margin-left: 1.5em;
+}
+.salary {
+    text-align: center;
+    padding: 1.5em 0.5em;
+    border: 1px solid #5A6B5D;
+    border-radius: 15px;
+}

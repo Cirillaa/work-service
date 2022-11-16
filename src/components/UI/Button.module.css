@@ -1,0 +1,15 @@
+.button {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    background-color: #5A6B5D;
+    padding: 1em 1.5em;
+    border-radius: 20px;
+    border: none;
+    margin: 1em;
+    cursor:pointer;
+}
+.button:hover,
+.button.active{
+    background-color:#263128;
+}

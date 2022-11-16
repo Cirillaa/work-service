@@ -1,0 +1,21 @@
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    position: relative;
+    font-size: 2em;
+    color: white;
+    margin: 0 0 0 1em;
+    border: 1px solid #5A6B5D;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    background-color: #5A6B5D;
+    border-radius: 30px;
+}
+.logo:hover{
+    background-color: #38453a;
+    color: white;
+    transition: 0.3s ease 0s;
+}

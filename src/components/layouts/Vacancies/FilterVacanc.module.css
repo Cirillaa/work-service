@@ -1,0 +1,36 @@
+.form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid #5A6B5D ;
+}
+.form label {
+    font-size: 26px;
+    margin-left: 40px;
+}
+.form {
+    width: 70%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background-color: white;
+    margin: 2em auto 0;
+}
+.form button {
+    font-size: 22px;
+    padding:  10px 25px;
+    border-radius: 20px;
+    border: 1px solid #5A6B5D;
+    background-color: #5A6B5D;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin-left: 3em;
+}
+.check {
+    opacity: 1;
+    width: 35px;
+    height: 35px;
+}

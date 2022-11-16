@@ -1,0 +1,54 @@
+.addForm {
+    display: flex;
+    flex-direction: column;
+}
+.addForm input{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    padding: 10px 5px;
+    margin: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid #5A6B5D
+}
+.addForm label {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+.addForm textarea {
+    height: 80px;
+    max-height: 100px;
+    margin: 10px 10px;
+    resize: vertical;
+    font-size: 16px;
+}
+.addForm button {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    background-color: #5A6B5D;
+    color: white;
+    padding: 10px 20px;
+    margin: 15px;
+    border-radius: 15px;
+    border:none;
+}
+.check {
+    width:35px;
+    height:35px;
+}
+.invalid {
+    box-shadow: 0 2px 8px rgba(223, 94, 94, 0.25);
+}
+.button {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    background-color: #5A6B5D;
+    color: white;
+    padding: 10px 20px;
+    margin: 15px;
+    border-radius: 15px;
+    border: none;
+}
+p {
+    font-size: 18px;
+    margin-left: 10px;
+}

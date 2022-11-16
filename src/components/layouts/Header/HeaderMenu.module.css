@@ -1,0 +1,19 @@
+.li {
+    list-style: none;
+    color: #5A6B5D;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.7em;
+    padding: 0.5em;
+    margin: 0 0.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: transparent;
+}
+.menu {
+    display: flex;
+}
+.li:hover{
+    border: 1px solid #5A6B5D;
+    transition: 0.3s ease 0s ;
+}

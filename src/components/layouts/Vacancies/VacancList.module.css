@@ -1,0 +1,16 @@
+.vakancList {
+    width: 70%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background-color: white;
+    margin: 2em auto 2em;
+    list-style: none;
+    text-align: left;
+}
+.nothingFound {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
