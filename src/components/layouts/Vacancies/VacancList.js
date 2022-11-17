@@ -6,6 +6,7 @@ import VacancItem from "./VacancItem";
 const VacancList = props => {
     const [vacancies, setVacancies] = useState([]);
     const [error, setError] = useState(null);
+    const [lengthVacanc, setLengthVacanc] = useState(false);
 
     const fetchVakancHandler = useCallback( async () => {
         setError(null)
@@ -36,9 +37,18 @@ const VacancList = props => {
     }
     }, [])
 
+
+
     useEffect(() => {
         fetchVakancHandler()
-    }, [fetchVakancHandler]);
+
+        setLengthVacanc(vacancies.length > 10);
+
+    }, [fetchVakancHandler, vacancies]);
+    
+    const addHandler = () => {
+        props.length(lengthVacanc);
+    }
 
     const filteredVacanc = vacancies.filter(vacanc => {
       if(!props.filCheck){
@@ -51,7 +61,7 @@ const VacancList = props => {
 
 
     return (
-      <ul className={classes.vakancList}>
+      <ul className={classes.vakancList} onChange={addHandler}>
         {error && <p>{error}</p>}
         {filteredVacanc.length === 0 && <p className={classes.nothingFound}>Found no vacancies.</p>}
         {filteredVacanc.map((vacanItem) => (
