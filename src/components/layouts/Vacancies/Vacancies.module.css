@@ -28,3 +28,7 @@
     border-radius: 20px;
     border: 1px solid #5A6B5D;
 }
+.buttonAdd:hover{
+    background-color: #364037;
+    transition: 0.3s ease;
+}

@@ -1,0 +1,29 @@
+.worker {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid #5A6B5D;
+    margin: 1em 0;
+}
+.workerDesc {
+    display: flex;
+}
+
+.worker h3 {
+    font-size: 24px;
+    margin-left: 10px;
+}
+.worker p {
+    font-size: 22px;
+}
+.expSection {
+    margin: 2em;
+    text-align: center;
+}
+.workerImg {
+    border: 1px solid #ccc
+}
+.worker:last-child {
+    border: none;
+}
+
