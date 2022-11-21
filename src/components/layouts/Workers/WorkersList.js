@@ -40,29 +40,38 @@ const WorkersList = props => {
     }, [fetchWorkers])
 
     const filtredWorkers = workers.filter(worker => {
-        if(props.filteredName) {
-            return worker.name.toLowerCase() === props.filteredName.toLowerCase();
+        if(props.filtredName && props.filteredCheck) {
+            return worker.name.toLowerCase() === props.filteredName.toLowerCase() && props.filteredCheck === worker.exp
         } else if (props.filteredCheck) {
             return worker.exp === props.filteredCheck;
-        } else {
+        } else if(props.filteredName) {
+            return worker.name.toLowerCase() === props.filteredName.toLowerCase();
+        }else {
             return worker
         }
     })
 
+    const onClickFav = (value) => {
+        props.changeFavIcon(value);
+    }
 
-    return <ul className={classes.list}>
+
+    return (
+      <ul className={classes.list}>
         {error && <p>{error}</p>}
-        {filtredWorkers.map((worker)=> (
-            <WorkerItem 
-            key = {worker.id}
-            name = {worker.name}
-            description = {worker.description}
-            tel = {worker.tel}
-            sex = {worker.sex}
-            exp = {worker.exp}
-            />
+        {filtredWorkers.length === 0 && <p className={classes.noWorkers}>Sorry, no candidates found</p>}
+        {filtredWorkers.map((worker) => (
+          <WorkerItem onClickFav={onClickFav}
+            key={worker.id}
+            name={worker.name}
+            description={worker.description}
+            tel={worker.tel}
+            sex={worker.sex}
+            exp={worker.exp}
+          />
         ))}
-    </ul>
+      </ul>
+    );
 }
 
 export default WorkersList;

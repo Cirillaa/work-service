@@ -17,13 +17,20 @@
     font-size: 22px;
 }
 .expSection {
-    margin: 2em;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 .workerImg {
     border: 1px solid #ccc
 }
 .worker:last-child {
     border: none;
+}
+.favWorker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 

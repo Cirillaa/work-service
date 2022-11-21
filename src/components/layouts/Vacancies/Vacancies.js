@@ -29,7 +29,7 @@ const Vacancies = (props) => {
     }
 
     return (
-      <section className={classes.vacanciesMain}>
+      <section className={classes.vacanciesMain} id='vacancies'>
         <h3 className={classes.title}>Vacancies</h3>
         <div className={classes.addVacancy}><button className={classes.buttonAdd} onClick={addVacancyHandler}>Add vacancy</button></div>
         {modalVisible && <AddVacancy onClose={HideModal} list={lengthList}/>}
