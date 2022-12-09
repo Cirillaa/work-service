@@ -70,3 +70,17 @@
 .second {
     margin-top: 8em;
 }
+
+@media (max-width: 970px){
+    .features {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .second {
+        margin-top:0;
+        grid-row: span 2;
+    }
+    .third {
+        margin-top: 4em
+    }
+}

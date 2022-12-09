@@ -13,3 +13,8 @@
     font-size: 24px;
     text-align: center;
 }
+@media (max-width: 970px) {
+    .list {
+        width: 90%;
+    }
+}

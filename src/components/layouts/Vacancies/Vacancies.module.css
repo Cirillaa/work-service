@@ -32,3 +32,9 @@
     background-color: #364037;
     transition: 0.3s ease;
 }
+
+@media (max-width: 970px ) {
+    .addVacancy {
+        width: 90%;
+    }
+}

@@ -12,6 +12,7 @@
 }
 .menu {
     display: flex;
+    position: relative;
 }
 a {
     text-decoration: none;
