@@ -1,4 +1,4 @@
-.vakancList {
+.list {
     width: 70%;
     background-color: white;
     padding: 1rem;
@@ -9,13 +9,12 @@
     list-style: none;
     text-align: left;
 }
-.nothingFound {
-    font-size: 28px;
-    font-weight: 700;
+.noWorkers {
+    font-size: 24px;
     text-align: center;
 }
 @media (max-width: 970px) {
-    .vakancList {
+    .list {
         width: 90%;
     }
 }

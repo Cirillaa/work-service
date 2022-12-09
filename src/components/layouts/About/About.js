@@ -8,7 +8,7 @@ import third from '../../../assets/third.jpg'
 
 const About = () => {
  return (
-   <section>
+   <section id='about'>
      <div className={classes.about}>
        <div>
          <h2 className={classes.title}>Our main features</h2>

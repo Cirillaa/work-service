@@ -12,7 +12,12 @@
 }
 .menu {
     display: flex;
+    position: relative;
 }
+a {
+    text-decoration: none;
+}
+
 .li:hover{
     border: 1px solid #5A6B5D;
     transition: 0.3s ease 0s ;

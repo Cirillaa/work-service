@@ -133,11 +133,16 @@ const AddVacancy = props => {
       </form>
     );
 
+    const moreThan10content = <p>
+      A lot of vacancies now. You can't add it now.
+    </p>
+
     return (
       <Modal onClose={props.onClose}>
-        {!didSubmit && !submittingState && initialContent}
+        {!props.list && !didSubmit && !submittingState && initialContent}
         {submittingState && submittingContent}
         {!submittingState && didSubmit && didSubmitContent}
+        {props.list && moreThan10content}
       </Modal>
     );
 }

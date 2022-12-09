@@ -1,7 +1,7 @@
 .vacanciesMain {
     background-color: #5A6B5D;
     text-align: center;
-    padding-top: 2rem;
+    padding: 2rem 0;
     margin-top: 2rem;
 }
 .title{
@@ -27,4 +27,14 @@
     background-color: #5A6B5D;
     border-radius: 20px;
     border: 1px solid #5A6B5D;
+}
+.buttonAdd:hover{
+    background-color: #364037;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 970px ) {
+    .addVacancy {
+        width: 90%;
+    }
 }
